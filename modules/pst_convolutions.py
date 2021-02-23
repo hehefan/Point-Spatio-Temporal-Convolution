@@ -344,8 +344,8 @@ class PSTConvTranspose(nn.Module):
         # spatial interpolation
         new_features = []
         for t1 in range(L1):
-            neighbor_xyz = temporal_interpolated_xyzs[t1]                                                               # [B, L', 3]
-            anchor_xyz = original_xyzs[t1]                                                                              # [B, L,  3]
+            neighbor_xyz = temporal_interpolated_xyzs[t1]                                                               # [B, N', 3]
+            anchor_xyz = original_xyzs[t1]                                                                              # [B, N,  3]
 
             dist, idx = pointnet2_utils.three_nn(anchor_xyz, neighbor_xyz)
 

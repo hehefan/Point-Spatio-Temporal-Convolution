@@ -30,8 +30,7 @@ Install [Mayavi](https://docs.enthought.com/mayavi/mayavi/installation.html) for
 ## Citation
 If you find our work useful in your research, please consider citing:
 ```
-@inproceedings{
-    fan2021pstnet,
+@inproceedings{fan2021pstnet,
     title={PSTNet: Point Spatio-Temporal Convolution on Point Cloud Sequences},
     author={Hehe Fan and Xin Yu and Yuhang Ding and Yi Yang and Mohan Kankanhalli},
     booktitle={International Conference on Learning Representations},
