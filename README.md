@@ -42,3 +42,6 @@ If you find our work useful in your research, please consider citing:
 1. PointNet++ PyTorch implementation: https://github.com/facebookresearch/votenet/tree/master/pointnet2
 2. MeteorNet: https://github.com/xingyul/meteornet
 3. 3DV: https://github.com/3huo/3DV-Action
+4. P4Transformer: https://github.com/hehefan/P4Transformer
+5. PointRNN (TensorFlow implementation): https://github.com/hehefan/PointRNN
+6. PointRNN (PyTorch implementation): https://github.com/hehefan/PointRNN-PyTorch

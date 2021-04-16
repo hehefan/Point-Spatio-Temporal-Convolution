@@ -50,7 +50,7 @@ class MSRAction(nn.Module):
                               spatial_pooling="sum")
 
         self.conv3a = PSTConv(in_planes=256,
-                              mid_planes=384,   # mistake 284
+                              mid_planes=284,
                               out_planes=512,
                               spatial_kernel_size=[2*2*radius, nsamples],
                               temporal_kernel_size=3,
