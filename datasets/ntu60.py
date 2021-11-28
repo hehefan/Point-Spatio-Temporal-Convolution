@@ -73,7 +73,7 @@ class NTU60Subject(Dataset):
         return clip.astype(np.float32), label, index
 
 if __name__ == '__main__':
-    dataset = NTU60Subject(root='/home/yuhading/Data/HeheFan/pami/data/ntu/video', meta='/home/yuhading/Data/HeheFan/pami/data/ntu/ntu60.list', frames_per_clip=16)
+    dataset = NTU60Subject(root='/scratch/HeheFan-data/data/ntu/video', meta='/scratch/HeheFan-data/data/ntu/ntu60.list', frames_per_clip=16)
     clip, label, video_idx = dataset[0]
     data = clip[0]
     print(data[:,0].max()-data[:,0].min())
