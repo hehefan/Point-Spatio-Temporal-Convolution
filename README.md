@@ -45,3 +45,4 @@ If you find our work useful in your research, please consider citing:
 4. P4Transformer: https://github.com/hehefan/P4Transformer
 5. PointRNN (TensorFlow implementation): https://github.com/hehefan/PointRNN
 6. PointRNN (PyTorch implementation): https://github.com/hehefan/PointRNN-PyTorch
+7. Awesome Dynamic Point Cloud / Point Cloud Video / Point Cloud Sequence / 4D Point Cloud Analysis: https://github.com/hehefan/Awesome-Dynamic-Point-Cloud-Analysis
