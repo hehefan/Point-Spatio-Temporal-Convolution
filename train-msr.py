@@ -125,7 +125,7 @@ def main(args):
     dataset = MSRAction3D(
             root=args.data_path,
             frames_per_clip=args.clip_len,
-            step_between_clips=1,
+            frame_inverval=args.frame_inverval,
             num_points=args.num_points,
             train=True
     )
@@ -133,7 +133,7 @@ def main(args):
     dataset_test = MSRAction3D(
             root=args.data_path,
             frames_per_clip=args.clip_len,
-            step_between_clips=1,
+            frame_inverval=args.frame_inverval,
             num_points=args.num_points,
             train=False
     )
@@ -210,6 +210,7 @@ def parse_args():
     parser.add_argument('--radius', default=0.5, type=float, help='radius for the ball query')
     parser.add_argument('--nsamples', default=9, type=int, help='number of neighbors for the ball query')
     parser.add_argument('--clip-len', default=16, type=int, metavar='N', help='number of frames per clip')
+    parser.add_argument('--frame-interval', default=1, type=int, metavar='N', help='interval between sampled frames')
     parser.add_argument('--num-points', default=2048, type=int, metavar='N', help='number of points per frame')
     parser.add_argument('-b', '--batch-size', default=16, type=int)
     parser.add_argument('--epochs', default=35, type=int, metavar='N', help='number of total epochs to run')
