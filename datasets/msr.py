@@ -50,7 +50,7 @@ class MSRAction3D(Dataset):
         video = self.videos[index]
         label = self.labels[index]
 
-        clip = [video[t+i*self.frame_inverval] for i in range(self.frame_inverval)]
+        clip = [video[t+i*self.frame_inverval] for i in range(self.frames_per_clip)]
         for i, p in enumerate(clip):
             if p.shape[0] > self.num_points:
                 r = np.random.choice(p.shape[0], size=self.num_points, replace=False)
